@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  font-size:10px;
+  font-family:'Inter';
+  color:#ffff;
+}
+
+body{
+  display:flex;
+  height:100vh;
+  justify-content:center;
+  align-items:center;
+  background-image:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c1c7a7b6-f3e5-4f95-9ecf-6684140f8ec8/d9h59uo-644214f9-0c1b-441f-8b9e-c30661e9b507.png');
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+#wrapper{
+  max-width:70vw;
+  width:100%;
+}
+#survey-form{
+  padding: 2vw 4vh;
+  background-color:rgb(51, 16, 45, 0.8);
+  border-radius:10px;
+  backdrop-filter:blur(5px);
+}
+
+/*How should i approach a responsive font-size?*/
+
+#title{
+  text-align:center;
+  font-family: 'Amatic SC', cursive;
+  font-size:7em;
+  text-shadow:3px 3px #33102D;
+}
+
+#description {
+  font-family: 'Dosis', sans-serif;
+  text-align:center;
+  font-size:3em;
+  color:#33102D;
+  font-weight:bold;
+}
