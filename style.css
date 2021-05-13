@@ -30,13 +30,11 @@ body{
   width:100%;
 }
 #survey-form{
-  padding: 2vw 4vh;
+  padding: 2vw;
   background-color:rgb(51, 16, 45, 0.8);
   border-radius:10px;
   backdrop-filter:blur(5px);
 }
-
-/*How should i approach a responsive font-size?*/
 
 #title{
   text-align:center;
@@ -51,4 +49,15 @@ body{
   font-size:3em;
   color:#33102D;
   font-weight:bold;
+  padding: 5vw;
 }
+
+#survey-form{
+  display:grid;
+}
+
+#name-label{
+  font-size:2vw;
+
+}
+
