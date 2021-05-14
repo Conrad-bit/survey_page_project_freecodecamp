@@ -14,9 +14,13 @@
   color:#ffff;
 }
 
+html{
+  width:100%;
+  height:100%;
+}
+
 body{
   display:flex;
-  height:100vh;
   justify-content:center;
   align-items:center;
   background-image:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/c1c7a7b6-f3e5-4f95-9ecf-6684140f8ec8/d9h59uo-644214f9-0c1b-441f-8b9e-c30661e9b507.png');
@@ -27,8 +31,8 @@ body{
 
 #wrapper{
   max-width:70vw;
-  width:100%;
 }
+
 #survey-form{
   padding: 2vw;
   background-color:rgb(51, 16, 45, 0.8);
@@ -39,8 +43,9 @@ body{
 #title{
   text-align:center;
   font-family: 'Amatic SC', cursive;
-  font-size:7em;
+  font-size:7vw;
   text-shadow:3px 3px #33102D;
+  padding-top:30vw;
 }
 
 #description {
@@ -58,6 +63,5 @@ body{
 
 #name-label{
   font-size:2vw;
-
 }
 
