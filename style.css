@@ -20,6 +20,7 @@ html{
 }
 
 body{
+  background-attachment:fixed;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -29,8 +30,17 @@ body{
   background-size:cover;
 }
 
-#wrapper{
-  max-width:70vw;
+#title{
+  text-align:center;
+  font-family: 'Amatic SC', cursive;
+  text-shadow:4px 4px #33102D;
+}
+
+#description {
+  font-family: 'Dosis', sans-serif;
+  text-align:center;
+  color:#33102D;
+  font-weight:bold;
 }
 
 #survey-form{
@@ -38,26 +48,6 @@ body{
   background-color:rgb(51, 16, 45, 0.8);
   border-radius:10px;
   backdrop-filter:blur(5px);
-}
-
-#title{
-  text-align:center;
-  font-family: 'Amatic SC', cursive;
-  font-size:7vw;
-  text-shadow:3px 3px #33102D;
-  padding-top:30vw;
-}
-
-#description {
-  font-family: 'Dosis', sans-serif;
-  text-align:center;
-  font-size:3em;
-  color:#33102D;
-  font-weight:bold;
-  padding: 5vw;
-}
-
-#survey-form{
   display:grid;
 }
 
