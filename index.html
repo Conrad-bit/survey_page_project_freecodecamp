@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<script>
+  function hiding() {
+    setTimeout(function () {
+      document.getElementById("section01").style.display = "none";
+    }, 1000);
+  }
+</script>
 
 <head>
   <link rel="stylesheet" href="style.css">
@@ -12,7 +19,7 @@
     <h1 id="title">Tell us about your hiking journey</h1>
     <p id="description">Hiking in nature is not only good for our bodies, it's good for our moods, our minds, and
       our relationships, too.</p>
-    <a id="anchor" href="#survey-form"><span></span></a>
+    <a onClick="hiding();" id="anchor" href="#survey-form"><span></span></a>
   </section>
   <section id="section02">
     <form id="survey-form">
@@ -20,39 +27,39 @@
       <input id="name" type="text" name="name" placeholder="Enter your name" required />
       <label for="email" id="email-label">Email</label>
       <input id="email" type="email" name="email" placeholder="Enter your email" required />
-      <label for="number" id="number-label">How many times a week usually do you hike?</label>
+      <label for="number" id="number-label">How many days a week do you usually hike?</label>
       <input id="number" name="number" type="number" placeholder="Enter a number from 1 to 7" min="0" max="7"
         required />
-      <label for="dropdown">This is a dropdown</label>
+      <label for="dropdown">Which climate do you prefer for hiking?</label>
       <select id="dropdown" name="dropdown" required>
-        <option disabled selected value>Select an option</option>
-        <option value="op1">Option 1</option>
-        <option value="op2">Option 2</option>
-        <option value="op3">Option 3</option>
+        <option disabled selected>Select an option</option>
+        <option>Cold Climates</option>
+        <option>Temperate Climates</option>
+        <option>Hot Climates</option>
       </select>
-      <label for="radio">This are radio options</label>
-      <div id="radio-options">
-        <label for="radio">Option 1</label>
-        <input type="radio" name="option" value="Option1">
-        <label for="radio">Option 2</label>
-        <input type="radio" name="option" value="Option2">
-        <label for="radio">Option 3</label>
-        <input type="radio" name="option" value="Option3">
+      <label for="radio">Would you join a hiking club?</label>
+      <div>
+        <input type="radio" name="joinclub">
+        <label>Yes</label>
       </div>
-      <label for="checkbox">This are checkboxes</label>
-      <div id="checkbox1">
+      <div>
+        <input type="radio" name="joinclub">
+        <label>No</label>
+      </div>
+      <label for="checkbox">What time do you prefer for hiking?</label>
+      <div>
         <input type="checkbox" name="cb1" value="cb1">
-        <label for="cb1">Checkbox 1</label>
+        <label for="cb1">Morning</label>
       </div>
-      <div id="checkbox1">
+      <div>
         <input type="checkbox" name="cb2" value="cb2">
-        <label for="cb2">Checkbox 2</label>
+        <label for="cb2">Afternoon</label>
       </div>
-      <div id="checkbox1">
+      <div>
         <input type="checkbox" name="cb3" value="cb3">
-        <label for="cb3">Checkbox 3</label>
+        <label for="cb3">Evening</label>
       </div>
-      <label for="textarea">Any aditional comments?</label>
+      <label for="textarea">Tell us about your favorite hiking trail (Optional)</label>
       <textarea name="textarea"></textarea>
       <input type="submit" id="submit">
     </form>
